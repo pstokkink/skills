@@ -111,9 +111,11 @@ lightweight: establish the intended effect and follow up on what must be preserv
 
 **Done when:** the developer has supplied an initial reasoned contribution and
 answered a targeted follow-up, and both parties agree on a feasible scope,
-approach, intended behavior, and verification plan. Record the plan, predictions,
-and assistance in session context. Begin implementation once this is met;
-otherwise preserve edits and report planning as incomplete.
+approach, intended behavior, and verification plan. Record the agreed plan and
+predictions in `planned-tasks/<task-slug>.md` at the repository root, creating
+the folder if needed. Keep this file after the task. Include enough detail for
+the developer to compare the plan with the implementation. Begin implementation
+once this is met; otherwise preserve edits and report planning as incomplete.
 
 ## 4. Implement and establish the assessed change
 
@@ -123,9 +125,9 @@ implementation and validation to a subagent with a self-contained handoff:
 agreed scope and plan, constraints, existing changes to preserve, expected
 behavior, and validation criteria.
 
-In either case, inspect the changes and validation evidence against the plan.
-Return material changes of approach to guided planning before adopting them.
-Preserve unrelated changes.
+In either case, inspect the changes and validation evidence against the plan in
+`planned-tasks/<task-slug>.md`. Return material changes of approach to guided
+planning before adopting them. Preserve unrelated changes.
 
 Inspect the resulting content, including relevant staged, unstaged, and new
 files, and the surrounding implementation and tests. Keep a session-only snapshot
