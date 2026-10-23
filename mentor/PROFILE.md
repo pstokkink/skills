@@ -1,25 +1,24 @@
 # Learning profile
 
-Read this reference before accessing persistent history or managing a profile.
-History guides question selection; it never substitutes for the current
-change's explanation.
+Use this reference at each skill invocation to load and manage cross-session
+learning evidence before task work. History guides question selection and
+prevents repeating already demonstrated concepts; the developer still explains
+learning relevant to the current change.
 
 ## Consent and location
 
-Ask permission before enabling persistence or opening an existing profile.
-Identify the learner by their confirmation, not by assuming that a Git author
-or shared workstation identifies them.
+Persistence is the default. On first use, explain that concise learning evidence
+will be stored locally across sessions, identify the profile location, and offer
+session-only operation as an opt-out. Confirm who the learner is; never infer
+identity from a Git author or shared workstation.
 
-Agree on one developer-owned local file outside all repositories and shared or
-synced folders. Offer `~/.local/share/mentor/profile.json` on Linux as a
-starting suggestion, not a file to read or create without consent. Resolve the
-chosen location and ensure it is outside version control. Keep separate profiles
-for separate learners. Record consent for that file in the current session;
-an existing file alone is not consent to access it.
-
-With consent, reuse the chosen file throughout the session. With a declined
-offer, remain session-only and avoid repeated prompts. Opening a later session
-requires confirmation of access; no profile discovery by scanning home folders.
+Use one developer-owned local file outside repositories and shared or synced
+folders. The default is `~/.local/share/mentor/profile.json` on Linux. Resolve
+the location and ensure it is outside version control. Keep separate profiles
+for separate learners. Reuse the established preference and location in later
+sessions without prompting again; access only that known path, never scan home
+folders for profiles. If the developer opts out, remain session-only and do not
+repeat the prompt.
 
 ## Evidence format
 
@@ -58,11 +57,12 @@ full answers, transcripts, secrets, remote URLs, and personnel rankings out of
 the profile. Use generic context labels and avoid confidential domain details.
 Keep assessed-content snapshots and commit permissions session-only.
 
-Preserve distinct assisted and independent observations, including later
-retrieval results. One success warrants a local demonstration claim. Later
-independent success on another change supports deeper probing, not an automatic
-global level or permanent mastery label. An unresolved gap may be recorded
-without treating the whole checkpoint as a pass.
+Preserve distinct assisted and independent observations, including useful later
+retrieval results. One success records a demonstrated concept; do not routinely
+ask the developer to prove it again. Use subsequent independent evidence to
+select deeper probes or revisit concepts when relevant, not to assign an
+automatic global level or permanent mastery label. An unresolved gap may be
+recorded without treating the whole checkpoint as a pass.
 
 Distinguish planning reasoning from post-implementation understanding in evidence
 summaries. Planning predictions are tentative until checked against the actual
